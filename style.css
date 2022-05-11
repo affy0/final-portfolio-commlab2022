@@ -36,8 +36,7 @@ nav {
   left: 0;
   display: flex;
   align-items: center;
-  overflow: auto;
-  padding: 1.5rem ;
+  padding-top: 3.5rem ;
  background-image: linear-gradient(to right, red ,blue, yellow);
  flex-wrap: wrap;
  z-index: 900;
@@ -79,7 +78,7 @@ nav ul {
 /* navigation */
 
 
-/* home section */
+/* ids for each div section */
 #home{
     position: relative;
     height:100%;
@@ -94,8 +93,8 @@ nav ul {
 
   #comic{
     position: relative;
-       height:100%;
-       width:100%;
+    height:100%;
+    width:100%;
   }
 
   #sound{
@@ -110,12 +109,49 @@ nav ul {
         width:100%;
         }
 
-  .home  .title {
-      position: absolute;
-object-position: 50% 50%;
-      width: 25px;
-      height: 25px;
+/* home section */
+  .affy {
+    width: 45%;
+    display: flex;
+    margin:  auto;
     }
+
+/* curve text */
+  .homes{
+    margin-top: 5%;
+  }
+
+ .homes h1{
+   font-size: 50px;
+
+   background: radial-gradient(
+   hsl(0, 100%, 50%),
+   hsl(0, 100%, 50%)
+ ) fixed;
+ background: conic-gradient(
+   hsl(100 100% 60%),
+   hsl(240, 100%, 50%),
+   hsl(100 90% 60%)
+ ) fixed;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+ }
+
+  .homes p {
+    line-height: 1.8;
+    font-size: 30px
+
+  }
+  .homes .affy {
+    width: 33%; height: auto;
+    min-width: 150px;
+    float: left;
+    margin-right:2rem;
+    border-radius: 50%;
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+  }
 
 
     #return-to-top {
@@ -160,12 +196,7 @@ object-position: 50% 50%;
         top: 5px;
     }
 
-/* website */
-/* #web {
-   margin:10px ;
-   padding: 100px ;
-    } */
-
+/* web section */
 .web{
   background: radial-gradient(
   hsl(0, 100%, 50%),
@@ -188,9 +219,11 @@ text-align: center;
 
 .web div{
   font-size: 30px;
+  margin-block: 10px;
+  margin-inline: 30px;
 }
 
-
+/* comic section */
 .comic1{
   background: radial-gradient(
   hsl(0, 100%, 50%),
@@ -213,9 +246,65 @@ text-align: center;
 
 .comic1 div{
   font-size: 30px;
+  margin-block: 10px;
+  margin-inline: 30px;
 }
 
 
+/* photos for each section */
+.spaceduck{
+width: 45%;
+display: flex;
+margin: 0 auto;
+
+background: linear-gradient(#120, #120),
+              linear-gradient(to right, red, blue, yellow);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+.zoom{
+  width: 45%;
+  display: flex;
+  margin: 0 auto;
+
+  background: linear-gradient(#120, #120),
+                linear-gradient(to right, red, blue, yellow);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat; /* this is important */
+    border: 5px solid transparent;
+    border-radius: 5px;
+}
+
+.sounde{
+  width: 45%;
+  display: flex;
+  margin: 0 auto;
+
+background: linear-gradient(#120, #120),
+              linear-gradient(to right, red, blue, yellow);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+.vid{
+  width: 45%;
+  display: flex;
+  margin: 0 auto;
+
+background: linear-gradient(#120, #120),
+              linear-gradient(to right, red, blue, yellow);
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat; /* this is important */
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+/* sound section */
 .sound1{
   background: radial-gradient(
   hsl(0, 100%, 50%),
@@ -238,8 +327,11 @@ text-align: center;
 
 .sound1 div{
   font-size: 30px;
+  margin-block: 10px;
+  margin-inline: 30px;
 }
 
+/* video section */
 .video1{
   background: radial-gradient(
   hsl(0, 100%, 50%),
@@ -262,8 +354,11 @@ text-align: center;
 
 .video1 div{
   font-size: 30px;
+  margin-block: 10px;
+  margin-inline: 30px;
 }
 
+/* buttons */
     .btn_one {
         color:white;
         padding:10px 40px;
@@ -278,7 +373,7 @@ text-align: center;
 
         position: relative;
         align-items: center;
-        top: 10%;
+        top: 5%;
         left: 43%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
