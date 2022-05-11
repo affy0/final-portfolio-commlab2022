@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ html, body {
   font-weight:bold;
   color: white;
      scroll-behavior: smooth;
+
 }
 
 /*scroll bar */
@@ -39,6 +41,7 @@ nav {
  background-image: linear-gradient(to right, red ,blue, yellow);
  flex-wrap: wrap;
  z-index: 900;
+ overflow: hidden;
 
 }
 
@@ -176,12 +179,15 @@ background: conic-gradient(
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 text-align: center;
-
 }
 
 .web h2{
   font-size: 50px;
   text-align: center;
+}
+
+.web div{
+  font-size: 30px;
 }
 
 
@@ -205,6 +211,10 @@ text-align: center;
   text-align: center;
 }
 
+.comic1 div{
+  font-size: 30px;
+}
+
 
 .sound1{
   background: radial-gradient(
@@ -224,6 +234,10 @@ text-align: center;
 .sound1 h2{
   font-size: 50px;
   text-align: center;
+}
+
+.sound1 div{
+  font-size: 30px;
 }
 
 .video1{
@@ -246,6 +260,10 @@ text-align: center;
   text-align: center;
 }
 
+.video1 div{
+  font-size: 30px;
+}
+
     .btn_one {
         color:white;
         padding:10px 40px;
@@ -258,11 +276,17 @@ text-align: center;
         transition:0.4s ease-in-out;
         margin:30px 10px;
 
-        position: absolute;
-        top: 20%;
-        left: 50%;
+        position: relative;
+        align-items: center;
+        top: 10%;
+        left: 43%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+    }
+
+    .btn_one:hover{
+      background-color: #02024d;
+      transition: 0.7s;
     }
 
     .btn_two {
@@ -277,11 +301,17 @@ text-align: center;
     transition:0.4s ease-in-out;
     margin:30px 10px;
 
-    position: absolute;
-    top: 20%;
-    left: 50%;
+    position: relative;
+    align-items: center;
+    top: 10%;
+    left: 43%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+.btn_two:hover{
+  background-color: #02024d;
+  transition: 0.7s;
 }
 
 .btn_3 {
@@ -296,11 +326,17 @@ background:transparent;
 transition:0.4s ease-in-out;
 margin:30px 10px;
 
-position: absolute;
-top: 20%;
-left: 50%;
+position: relative;
+align-items: center;
+top: 10%;
+left: 43%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
+}
+
+.btn_3:hover{
+  background-color: #02024d;
+  transition: 0.7s;
 }
 
 .btn_4 {
@@ -315,9 +351,15 @@ background:transparent;
 transition:0.4s ease-in-out;
 margin:30px 10px;
 
-position: absolute;
-top: 20%;
-left: 50%;
+position: relative;
+align-items: center;
+top: 10%;
+left: 43%;
 -ms-transform: translate(-50%, -50%);
 transform: translate(-50%, -50%);
+}
+
+.btn_4:hover{
+  background-color: #02024d;
+  transition: 0.7s;
 }

@@ -1,4 +1,4 @@
-// ===== Scroll to Top ====
+// scroll to top
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 0) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
